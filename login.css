@@ -1,0 +1,260 @@
+/* header */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
+
+*
+{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: none;
+    transition: .2s linear;
+}
+
+
+/* $green:#219150;
+$black:#10221b;
+$white:#fff;
+$light-bg:#eee;
+$border:.2rem solid $black;
+$box-shadow:0 .5rem 1rem rgba(0,0,0,.1); */
+
+
+
+@mixin grid($val)
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax($val, 1fr));
+    gap:1.5rem;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+
+    &::-webkit-scrollbar{
+        width:1rem;
+    }
+}
+
+
+    &::-webkit-scrollbar-track{
+        background: white;
+    }
+
+
+    &::-webkit-scrollbar-thumb{
+      background: black;
+    }
+
+    section{
+        padding: 5rem 9%;
+    }
+
+    .btn{
+        margin-top: 1rem;
+display: inline-flex;
+        border: 2px solid white;
+        border-radius: 2rem;
+        color: white;
+        cursor: pointer;
+        background: none;
+        font-size: 1.7rem;
+        padding: 1rem 5rem;
+        margin-left: 15px;
+       
+
+    }
+
+    .btn:hover{
+        background: yellow;
+        color: black;
+    }
+
+
+    .header{
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        padding: 1em 9%;
+        z-index: 1000;
+        display: flex;
+        align-items: center;
+        /* top: 10px; */
+        background: rgba(0, 0, 0, 1);
+    }
+
+    .logo{
+        margin-right: auto;
+        font-size: 4rem;
+        color: yellow;
+        font-weight: bolder;
+
+    i{
+color: green;
+    }
+}
+
+
+.navbar a{
+    margin: 3.5px;
+    margin-left: 2rem;
+    font-size: 1.5rem;
+    letter-spacing: .1em;
+    color: white;
+    
+
+    
+}
+
+.navbar a:hover{
+    
+    background-color: yellow;
+    color: black;
+    transition: 0.1s ease;
+    border: 1px solid black;
+    border-radius: 1em;
+}
+
+
+
+.icons div{
+    font-size: 2rem;
+    margin-left: 2rem;
+    cursor: pointer;
+    color: white;
+}
+
+#search-btn:hover{
+    color: yellow;
+    transition: 0.1s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container{
+	
+	margin-top: 120px;
+    margin-bottom: 50px;
+     margin-left: 540px;
+	width: 450px;
+	height: auto;
+	background: #dedede;
+	border-radius: 5px;
+}
+.label{
+	padding: 20px 130px;
+	font-size: 35px;
+	font-weight: bold;
+	color: #130f40;
+}
+.login_form{
+	padding: 20px 40px;
+}
+.login_form .font{
+	font-size: 18px;
+	color: #130f40;
+	margin: 5px 0;
+}
+.login_form input{
+	height: 40px;
+	width: 350px;
+	padding: 0 5px;
+	font-size: 18px;
+	outline: none;
+	border: 1px solid silver;
+}
+.login_form .font2{
+	margin-top: 30px;
+}
+.login_form button{
+    
+	margin: 45px 0 30px 0;
+	height: 45px;
+	width: 365px;
+	font-size: 20px;
+	color: white;
+	outline: none;
+	cursor: pointer;
+	font-weight: bold;
+	background: #1A237E;
+	border-radius: 3px;
+	border: 1px solid #3949AB;
+	transition: .5s;
+}
+.login_form button:hover{
+	background: #346a15;
+}
+.login_form #email_error,
+.login_form #pass_error{
+	margin-top: 5px;
+	width: 345px;
+	font-size: 18px;
+	color: #C62828;
+	background: rgba(255,0,0,0.1);
+	text-align: center;
+	padding: 5px 8px;
+	border-radius: 3px;
+	border: 1px solid #EF9A9A;
+	display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* footer */
+
+  
+  .footer{
+    
+    padding: 3rem;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+}
+
+.icon{
+    color: white;
+    margin-left: 15px;
+
+}
+
+.fa-brands{
+    margin-left: 5px;
+    font-size: 25px;
+    
+}

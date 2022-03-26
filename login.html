@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="login.css">
+   <script src="https://kit.fontawesome.com/fa1406f549.js" crossorigin="anonymous"></script>
+
+    <title>Login page</title>
+</head>
+<body>
+
+
+    <!-- header starts -->
+
+    <header class="header">
+
+        <a href="#" class="logo"> <i class="fas fa-hiking"></i> kerala </a>
+    
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="#">About</a>
+            <a href="#">Gallery</a>
+            <a href="#">Faq</a>
+            <a href="#">Contact us</a>
+        </nav>
+    
+        <div class="icons">
+    
+            <div id="search-btn" class="fas fa-search">
+    
+    </div>
+        </div>
+    
+    </header>
+    
+  
+
+
+
+
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Validated Login Form</title>
+        <link rel="stylesheet" href="login.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="label">User Login</h1>
+            <form class="login_form" action="home.html" method="post" name="form" onsubmit="return validated()">
+                <div class="font">Email or Phone</div>
+                <input autocomplete="off" type="text" name="email">
+                <div id="email_error">Please fill up your Email or Phone</div>
+                <div class="font font2">Password</div>
+                <input type="password" name="password">
+                <div id="pass_error">Please fill up your Password</div>
+                <button type="submit">Login</button>
+            </form>
+        </div>	
+        
+    </body>
+    </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Footer starts -->
+
+<footer class="footer">
+    <div class="bg">
+        <div class="write">
+            <div class="icon">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-whatsapp"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+            <p>
+                Department of Tourism, Government of Kerala, Park View, Thiruvananthapuram, Kerala, India - 695 033
+                 Phone: +91 471 2321132, Fax: +91 471 2322279, E-mail: info@keralatourism.org.
+                  All rights reserved © Kerala Tourism 2022. Copyright | Terms of Use | Cookie Policy | Contact Us.
+                Developed & Maintained by Invis Multimedia.
+            </p>
+            <br>
+            <p>Copyright(C) All rights reserved</p>
+        </div>
+        <div class="icons">
+
+        </div>
+
+    </div>
+</footer>
+
+
+
+
+<script>
+
+
+var email = document.forms['form']['email'];
+var password = document.forms['form']['password'];
+
+var email_error = document.getElementById('email_error');
+var pass_error = document.getElementById('pass_error');
+
+email.addEventListener('textInput', email_Verify);
+password.addEventListener('textInput', pass_Verify);
+
+function validated(){
+	if (email.value.length < 9) {
+		email.style.border = "1px solid red";
+		email_error.style.display = "block";
+		email.focus();
+		return false;
+	}
+	if (password.value.length < 8) {
+		password.style.border = "1px solid red";
+		pass_error.style.display = "block";
+		password.focus();
+		return false;
+	}
+
+}
+function email_Verify(){
+	if (email.value.length >= 6) {
+		email.style.border = "1px solid silver";
+		email_error.style.display = "none";
+		return true;
+	}
+}
+function pass_Verify(){
+	if (password.value.length >= 9) {
+		password.style.border = "1px solid silver";
+		pass_error.style.display = "none";
+		return true;
+	}
+}
+
+</script>
+
+
+
+
+</body>
+</html>
